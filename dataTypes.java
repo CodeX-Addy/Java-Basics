@@ -1,7 +1,5 @@
-// Online Java Compiler
-// Use this editor to write, compile and run your Java code online
 
-class Sum{
+class Datatypes{
     public static void main(String []args){
         //INTEGERS
         int a = 5;
