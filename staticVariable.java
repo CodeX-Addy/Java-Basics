@@ -1,12 +1,16 @@
-//Concept of static variable in java
+//Concept of static variable and method in java
 
 class Mobile{
   String name;
-  static int price;
+  static int price;//Static variable
   String brand;
 
   public void show(){
     System.out.println(name + " : " + price + " : " + brand);
+  }
+  //Static method
+  public static void show1(Mobile obj){
+    System.out.println(obj.name + " : " + price + " : " + obj.brand);
   }
 }
 
@@ -26,7 +30,9 @@ class Main{
     Mobile.price = 1600;
 
     obj1.show();
-    obj2.show();
+    //obj2.show();
+
+    Mobile.show1(obj2);
     
   }
 }
